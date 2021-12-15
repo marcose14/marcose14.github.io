@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<title>Info Page</title>
+<link rel="shortcut icon" type="image/jpg" href="Medicalwp-Medical-Health-Sign-red.ico"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("Health_photo (1).jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+
+</style>
+
+
+<body>
+
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">WAYS TECHOLOGY HAS CHANGED HEALTHCARE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="pictures .html" target=blank class="w3-button w3-block w3-black">PICTURES</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-black"  style="font-size:90px;">Information<br>on<br>Health Techology</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+  </div>
+</header>
+<script>
+
+
+var mydate=new Date()
+var year=mydate.getYear()
+if (year < 1000)
+year+=1900
+var day=mydate.getDay()
+var month=mydate.getMonth()+1
+if (month<10)
+month="0"+month
+var daym=mydate.getDate()
+if (daym<10)
+daym="0"+daym
+document.write("<small><font color='000000' face='Arial'><b>"+month+"/"+daym+"/"+year+"</b></font></small>")
+
+
+</script>
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT HEALTH TECHOLOGY</span></h5>
+    <p>Techology in healthcare has changed the way we treat patients. We know many things now that we couldnt know without the technology.  </p>
+    <p>In addition to all the technology we have now, with the addition to 5g doctors are going to be able to do lot of things from home. Being able to preform suguries and treat patients from all parts of tghe world. </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>“In 10 years the electronic medical record will be the minor player, in terms of where a person’s health history lives. Most of that information will be kept on the phone or in a secure cloud, and the patient will be highly engaged with collecting, curating and sharing that data. Most doctor visits will be like calling up a YouTube meets virtual human docs and there will also be an aspect of virtual reality.”</i></p>
+      <p>- Leslie Saxon on the Future of Healthcare</p>
+    </div>
+    <img src="860x573.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WAYS TECHOLOGY HAS CHANGED HEALTHCARE</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Imporvments </div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">More Ways</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5> Internet has become a main source of medical information</h5>
+      <p class="w3-text-grey">According to the Pew Internet and American Life Project, in a 2004 survey of 8 million seniors who use the internet, only 66% said they searched healthcare information online. </p><br>
+    
+      <h5> Healthcare facilities are reaching patients using social media</h5>
+      <p class="w3-text-grey">Healthcare facilities, particularly hospitals, are using social media to establish contact with patients, answer questions about practices, launch public awareness campaigns, and perform community outreach. </p><br>
+    
+      <h5>Better treatment and less suffering</h5>
+      <p class="w3-text-grey">This is by providing new machines, medicines, and treatments that save lives and improve the chance of recovery for billions</p><br>
+    
+      <h5> Improved patient care and worker efficiency</h5>
+      <p class="w3-text-grey"> Nurses and doctors use hand-held computers to record a patent's medical history and check that they are administering the correct treatment.</p><br>
+    
+      <h5> Doctors are easier to reach and better at their jobs</h5>
+      <p class="w3-text-grey">With the touch of a smartphone doctors can access thousands of pages of medical textbooks.</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Ease of Workflow</h5>
+      <p class="w3-text-grey"> According to the Bureau of Labor Statistics – demand for this sector is expected to increase by 13% from 2016 to 2026.</p><br>
+    
+      <h5>Lower Healthcare Costs</h5>
+      <p class="w3-text-grey">According to a study from the University of Michigan, shifting from paper to electronic health records reduced the cost of outpatient care by 3%.</p><br>
+    
+      <h5>Improved Access to Big Data  </h5>
+      <p class="w3-text-grey">The Cloud is an invaluable tool for medical research and sharing medical information. Back in 2014 it was the main way to exchange health info.</p><br>
+    
+      <h5>Better and Safer Data Storage</h5>
+      <p class="w3-text-grey">Cloud computer technology allows for masses of information to be stored at an unbelievably low cost, all without the limitations </p><br>
+    
+      <h5>Improved Public Health</h5>
+      <p class="w3-text-grey">EHRs provide invaluable data to clinical researchers, helping to advance medical knowledge and the development of treatments for common health problems</p>
+    </div>  
+    <img src="0700.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <p>Techology is here to stay and we are using every last bit of it everywhere. Some might say in more places than others but at least we are using it in the doctors office.</p>
+    <img src="doctor-reassures-patient.jpg" class="w3-image" style="width:100%">
+   
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
